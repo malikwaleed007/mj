@@ -219,14 +219,14 @@ p {
 }
 /* Section: Contact */
 #contact-info .container{
-  display: block;
-  justify-content:center ;
+  display: flex;
+  justify-content:space-between ;
+  
 }
 #contact-info .box {
-  float: left;
-  width: 33.3%;
-  padding: 50px;
-  text-align: center;
+  text-align:center;
+  padding: 25px 0px;
+  flex: 1;
 }
 #contact-info .box h3{
   padding-bottom: 20px;

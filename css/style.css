@@ -218,24 +218,44 @@ p {
   justify-content: center;
 }
 /* Section: Contact */
-#contact {
-  display: flex;
-}
-
-#contact .map, #contact .contact-form {
-  flex: 1;
-}
-
-#contact .contact-form .form-group {
-  margin: 0.75rem;
-}
-
-#contact .contact-form label {
+#contact-info .container{
   display: block;
+  justify-content:center ;
+}
+#contact-info .box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+#contact-info .box h3{
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-#contact .contact-form input,
-#contact .contact-form textarea {
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, 
+#contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #1E90FF;
 }

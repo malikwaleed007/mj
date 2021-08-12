@@ -156,7 +156,9 @@ p {
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
 }
-
+#showcase .showcase-content .btn{
+  margin-top: 1rem;
+}
 /* Section: What We Do */
 #what .items {
   display: flex;
@@ -210,8 +212,8 @@ p {
 #clients .items img {
   display: block;
   margin: auto;
-  width: 25%;
-  height: 70px ;
+  width: 54px;
+  height: 49px;
 }
 #clients div {
   flex: 1;

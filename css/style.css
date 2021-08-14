@@ -144,7 +144,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100%;
   padding: 0 2rem;
@@ -161,6 +161,9 @@ p {
 }
 #showcase .showcase-content p{
   padding-bottom: 125px;
+}
+#showcase .showcase-content h1{
+  padding-top: 10px;
 }
 /* Section: What We Do */
 #what .items {

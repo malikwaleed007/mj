@@ -267,3 +267,7 @@ p {
   outline: none;
   border-color: #1E90FF;
 }
+/* Gallery */
+#gallery-container{
+  display: grid;
+}

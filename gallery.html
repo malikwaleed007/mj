@@ -31,45 +31,61 @@
   <!-- Gallery -->
   <head>
     <style>
+      body{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.4;
+      }
     div.gallery {
-      border: 1px solid #ccc;
+      border: 1px solid #333;
+      background: #333;
+      color: #fff;
     }
     
     div.gallery:hover {
-      border: 1px solid #777;
+      border: 1px solid #CCC;
     }
     
     div.gallery img {
       width: 100%;
-      height: auto;
+      height: 75%;
     }
     
     div.desc {
       padding: 15px;
       text-align: center;
     }
+
+    h1 {
+       text-align:center;
+       background: #333;
+       color: #fff;
+       margin:0px;
+       padding-bottom: 10px;
+      }
+    h2 {
+       text-align:center;
+       background: #333;
+       color: #fff;
+       margin:0px;
+       padding: 15px 0px;
+       font-size:22px;
+      }
     
     * {
       box-sizing: border-box;
     }
     
-    .responsive {
-      padding: 0 6px;
-      float: left;
-      width: 24.99999%;
-    }
-    
     @media only screen and (max-width: 700px) {
-      .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+      #gallery-container{grid-template-columns: repeat(2,auto );
       }
     }
     
     @media only screen and (max-width: 500px) {
-      .responsive {
-        width: 100%;
-      }
+       #gallery-container{
+        grid-template-columns: 1fr;
+
+        }
+        
     }
     
     .clearfix:after {
@@ -81,59 +97,49 @@
     </head>
     <body>
     
-    <h2 class="m-heading text-center" style="padding-top: 10px;">Some of our custom work</h2>
-    <h3 style="text-align: center; padding-bottom: 10px ;">Take a look at some of our favorite custom work. We love these bikes and happy to say that our customers love our bikes more.</h3>
+    <h1>Some of our Custom Work</h1>
+    <h2>Take a look at some of our favorite custom work. We love these bikes and happy to say that our customers love our bikes more.</h2>
 
     <!-- Gallery section -->
   <section id="gallery-container" >
-
-    <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="img/bike (5).jpg">
           <img src="img/bike (5).jpg" alt="img" width="600" height="400">
         </a>
         <div class="desc">RE description here</div>
       </div>
-    </div>
+  
 
-
-    <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="/img/bike (1).jpg">
           <img src="/img/bike (1).jpg" alt="img" width="600" height="400">
         </a>
         <div class="desc">RX100 description here</div>
       </div>
-    </div>
+   
     
-    
-    <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="/img/bike (2).jpg">
           <img src="/img/bike (2).jpg" alt="img" width="600" height="400">
         </a>
         <div class="desc">RE description here</div>
       </div>
-    </div>
+   
     
-    <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="/img/bike (3).jpg">
           <img src="/img/bike (3).jpg" alt="img" width="600" height="400">
         </a>
         <div class="desc">RE description here</div>
       </div>
-    </div>
     
     
-    <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="img/bike (4).jpg">
           <img src="img/bike (4).jpg" alt="img" width="600" height="400">
         </a>
         <div class="desc">RE description here</div>
       </div>
-    </div>
     
 
 

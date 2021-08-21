@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
+
 }
 
 a {
@@ -270,4 +270,7 @@ p {
 /* Gallery */
 #gallery-container{
   display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 5px;
+  background: #333;
 }

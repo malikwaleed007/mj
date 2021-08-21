@@ -273,4 +273,5 @@ p {
   grid-template-columns: repeat(2,auto);
   grid-gap: 5px;
   background: #333;
+  
 }

@@ -46,8 +46,9 @@
     }
     
     div.gallery img {
-      width: 100%;
-      height: auto;
+      width: 85%;
+      /* height: auto; */
+      margin-left: 50px;
     }
     
     div.desc {
@@ -82,11 +83,13 @@
     
     @media only screen and (max-width: 500px) {
        #gallery-container{
-        grid-template-columns: 1fr;
-
+        grid-template-columns: 1fr;}
+      div.gallery img {
+      width: 100%;
+      margin: 0;
         }
         
-    }
+      }
     
     .clearfix:after {
       content: "";

@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -28,7 +28,7 @@ p {
 }
 
 .text-center {
-  text-align:center;
+  text-align: center;
 }
 
 .text-primary {
@@ -53,6 +53,7 @@ p {
 .l-heading {
   font-size: 3rem;
   margin-bottom: 0.75rem;
+  margin-top: 6rem;
   line-height: 1.1;
 }
 
@@ -64,16 +65,32 @@ p {
 
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0px;
 }
 
-.py-1 { padding: 1.5rem 0; }
-.py-2 { padding: 2rem 0; }
-.py-3 { padding: 3rem 0; }
+.py-1 {
+  padding: 1.5rem 0;
+}
 
-.p-1 { padding: 1.5rem; }
-.p-2 { padding: 2rem; }
-.p-3 { padding: 3rem; }
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
 
 .btn {
   display: inline-block;
@@ -108,12 +125,12 @@ p {
 #navbar {
   display: flex;
   position: sticky;
-  top:0;
+  top: 0;
   background: #333;
   color: #fff;
   justify-content: space-between;
   z-index: 1;
-  padding: 1rem;
+  padding: 18px;
 }
 
 #navbar ul {
@@ -136,7 +153,7 @@ p {
 /* Showcase */
 #showcase {
   background: #333 url('../img/logopc.jpg') no-repeat center center/cover;
-  height: 85vh;
+  height: 100vh;
   color: #fff;
 }
 
@@ -146,26 +163,41 @@ p {
   text-align: center;
   /* justify-content: center; */
   align-items: center;
-  height: 85%;
+  height: 100%;
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
   top: 65px;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-#showcase .showcase-content .btn{
+
+#showcase .showcase-content .btn {
   margin-top: 1rem;
 }
-#showcase .showcase-content p{
+
+#showcase .showcase-content p {
   padding-bottom: 125px;
 }
-#showcase .showcase-content h1{
+
+#showcase .showcase-content h1 {
   padding-top: 10px;
 }
+
 /* Section: What We Do */
+#what {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+#what .container .m-heading {
+
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
 #what .items {
   display: flex;
   padding: 1rem;
@@ -175,6 +207,7 @@ p {
   flex: 1;
   text-align: center;
   padding: 1rem;
+  font-size: 17px;
 }
 
 #what .items .item i {
@@ -187,7 +220,23 @@ p {
 /* Section: Who We Are */
 #who {
   display: flex;
+  padding-bottom: 8rem;
 }
+
+#who .who-text {
+  padding: 8.5rem;
+}
+
+#who .m-heading {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+#who p {
+  font-size: 17px;
+}
+
+
 
 #who div {
   flex: 1;
@@ -196,21 +245,36 @@ p {
 #who .who-img {
   background: url('../img/profilepicture.jfif') no-repeat center center/cover;
 }
-#who .list li a{
+
+#who .list li a {
   color: #1E90FF;
 }
+
 /* Section: Why us */
+#clients {
+  padding-bottom: 8rem;
+
+}
+
+#clients .m-heading {
+  font-size: 50px;
+  padding-bottom: 35px;
+
+}
+
 #clients .items {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
 }
-#clients .items p{
+
+#clients .items p {
   padding: 0px 18px;
-  margin:auto;
+  margin: auto;
   text-align: center;
 }
-#clients .items h3{
+
+#clients .items h3 {
   text-align: center;
   padding: 15px 0;
 }
@@ -221,22 +285,26 @@ p {
   width: 54px;
   height: 49px;
 }
+
 #clients div {
   flex: 1;
   justify-content: center;
 }
+
 /* Section: Contact */
-#contact-info .container{
+#contact-info .container {
   display: flex;
-  justify-content:space-between ;
-  
+  justify-content: space-between;
+
 }
+
 #contact-info .box {
-  text-align:center;
+  text-align: center;
   padding: 25px 0px;
   flex: 1;
 }
-#contact-info .box h3{
+
+#contact-info .box h3 {
   padding-bottom: 20px;
   padding-top: 10px;
 }
@@ -251,7 +319,7 @@ p {
   margin-bottom: 5px;
 }
 
-#contact-form input, 
+#contact-form input,
 #contact-form textarea {
   width: 100%;
   padding: 10px;
@@ -262,16 +330,17 @@ p {
   height: 200px;
 }
 
-#contact-form input:focus, 
+#contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
   border-color: #1E90FF;
 }
+
 /* Gallery */
-#gallery-container{
+#gallery-container {
   display: grid;
-  grid-template-columns: repeat(2,auto);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 50px;
   background: #333;
-  
+
 }
